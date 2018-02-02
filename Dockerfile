@@ -59,6 +59,6 @@ VOLUME /var/lib/cassandra
 # 9160: thrift service
 EXPOSE 7000 7001 7199 9042 9160
 
-USER 999:999
+USER cassandra
 
-CMD ["su","-","cassandra","-c","cassandra", "-f"]
+CMD ["cassandra", "-f"]
